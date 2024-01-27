@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="food,receipts,website">
+    <meta name="description" content="Yummy has receipts of different kinds of food.">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <div class="spinner vh-100 bg-dark d-flex justify-content-center align-items-center">
+        <i class="fa fa-spin fa-spinner text-white fs-1"></i>
+    </div>
+   <aside class="vh-100 bg-black w-25 position-fixed z-3 d-flex">
+        <div class="navs w-75 d-flex flex-column justify-content-between">
+            <ul class="text-white list-unstyled ms-3 mt-5 fs-6">
+                <li id="search" class="mt-2">Search</li>
+                <li id="category" class="mt-2">Category</li>
+                <li id="area" class="mt-2">Area</li>
+                <li id="ingredients" class="mt-2">Ingredients</li>
+                <li id="contact" class="mt-2">Contact</li>
+            </ul>
+            <div class="icons ms-3">
+                <i class="fa fa-brands fa-facebook text-white"></i>
+                <i class="fa fa-brands fa-twitter text-white"></i>
+                <i class="fa-solid fa-globe text-white"></i>
+                <p class="text-white">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="direct bg-white vh-100 w-25 d-flex flex-column justify-content-between">
+            <img src="images/logo.png" alt="logo" class="w-75 mx-auto">
+            <div class="closeOpen mx-auto">
+                <i id="closeBtn" class="fa-solid fa-x fs-2 position-absolute d-none"></i>
+                <i id="openBtn" class="fa-solid fa-bars fs-2"></i>
+            </div>
+            <div class="mx-auto">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+   </aside>
+   <section class="search bg-dark pt-5 d-none">
+        <div class="container d-flex">
+            <input id="searchName" type="text" class="form-control  mx-2" placeholder="Search by Name">
+            <input id="searchLetter" type="text" class="form-control  mx-2" placeholder="Search by First letter">
+       </div>
+   </section>
+   <section id="Meals" class="bg-dark py-5">
+    <div class="container allMeals">
+        <div class="row g-3">
+            <div class="meal col-md-3">
+                <!-- <div class="innerMeal position-relative overflow-hidden">
+                    <img class="w-100" src="images/meal-3.jpg" alt="meal">
+                    <div class="desc w-100">
+                        <h4 class="text-black">Cobra</h4>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="contact bg-dark d-none py-5">
+        <div class="container text-center">
+            <form method="post" class="row g-3">
+                <div class="col-sm-6">
+                    <input id="nameInput" type="text" class="form-control" placeholder="Enter your Name">
+                </div>
+                <div class="col-sm-6">
+                    <input id="emailInput" type="text" class="form-control" placeholder="Enter your Email">
+                </div>
+                <div class="col-sm-6">
+                    <input id="phoneInput" type="text" class="form-control" placeholder="Enter your Phone">
+                </div>
+                <div class="col-sm-6">
+                    <input id="ageInput" type="text" class="form-control" placeholder="Enter your Age">
+                </div>
+                <div class="col-sm-6">
+                    <input id="passInput" type="password" class="form-control" placeholder="Enter your Password">
+                </div>
+                <div class="col-sm-6">
+                    <input id="rePassword" type="password" class="form-control" placeholder="RePassword">
+                </div>
+            </form>
+            <button id="Submit" class="btn btn-outline-danger my-3 disabled">Submit</button>
+        </div>
+   </section>
+   <section class="Meal bg-dark d-none">
+        <div class="container d-flex text-white pt-4">
+            <div class="mealImg w-25">
+                <img src="images/meal-3.jpg" alt="meal" class="w-100">
+                <h2>Cobra</h2>
+            </div>
+            <div class="MealDesc w-50 ms-5 ps-3">
+                <h1>Instructions</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In quisquam maiores officiis illum nisi esse laboriosam itaque, adipisci quibusdam commodi? Exercitationem libero quam expedita enim delectus! Odio, enim? Natus, architecto.</p>
+                <h2 class="d-block">Area: <span class="mealArea">Turkish</span></h2>
+                <h2 class="d-block">Category: <span class="mealCat">Side</span></h2>
+                <div class="ingredients">
+                    <span class="bg-white btn btn-info">1 cup Lentil</span>
+                    <span class="bg-white btn btn-info">1 cup Lentil</span>
+                    <span class="bg-white btn btn-info">1 cup Lentil</span>
+                    <span class="bg-white btn btn-info">1 cup Lentil</span>
+                    <span class="bg-white btn btn-info">1 cup Lentil</span>
+                    <span class="bg-white btn btn-info">1 cup Lentil</span>
+                </div>
+                <div class="tags mt-3">
+                    <h4>Tags: </h4>
+                    <span class="bg-white text-danger d-inline-block mb-3">Soup</span>
+                    <div class="links">
+                        <button class="btn btn-danger"><a href="">YouTube</a></button>
+                        <button class="btn btn-success"><a href="">Source</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

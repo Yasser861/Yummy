@@ -1,0 +1,39 @@
+.meal .innerMeal .desc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255 , 255, 255, 0.8);
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+section{
+    min-height: 100vh;
+}
+.meal .innerMeal:hover .desc{
+    transform: translateY(0);
+}
+.meal{
+    cursor: pointer;
+}
+.meal .innerMeal{
+    max-height: 150px;
+    text-align: center;
+}
+.meal .innerMeal i{
+    font-size: 50px;
+}
+/* ===========================aside================================ */
+aside ul li{
+cursor: pointer;
+}
+aside{
+    transform: translateX(-75%);
+}
+/* ------------------------------meal---------------------------- */
+section.Meal .tags .links a{
+    text-decoration: none;
+    color: white;
+}
+/* ---------------------------------------------------- */
